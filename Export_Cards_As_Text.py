@@ -589,7 +589,7 @@ def displayDlg():
 	dlg = ExportTextDialog(mw)
 	dlg.exec_()
 
-action = QAction("ExportCardsAsText", mw)
+action = QAction("Export Cards As Text", mw)
 mw.connect(action, SIGNAL("triggered()"), displayDlg)
 mw.form.menuTools.addAction(action)
 mw.EXPORT = ExportSettings() # keep settings over multiple calls of the dialog
